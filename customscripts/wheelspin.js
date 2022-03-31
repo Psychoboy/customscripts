@@ -270,7 +270,7 @@ function wheelSpin() {
             transformOrigin: "50% 50%",
             rotation: "+=360",
             ease: "none",
-            duration: 3.0,
+            duration: 1.0,
             onComplete: () => {
                 loopIteration >= fullSpins && requestStop ? c.play() : (loopIteration++, l.play(0));
             },

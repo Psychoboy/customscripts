@@ -270,7 +270,7 @@ function wheelSpin() {
             transformOrigin: "50% 50%",
             rotation: "+=360",
             ease: "none",
-            duration: 3.0,
+            duration: 0.35,
             onComplete: () => {
                 loopIteration >= fullSpins && requestStop ? c.play() : (loopIteration++, l.play(0));
             },
@@ -279,7 +279,7 @@ function wheelSpin() {
         c = gsap.to(wheel, {
             rotation: `+=${t}`,
             ease: Power3.easeOut,
-            duration: t / 360,
+            duration: t / 180,
             paused: !0,
             onComplete: () =>
                 (function () {

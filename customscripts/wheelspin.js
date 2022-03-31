@@ -265,12 +265,12 @@ function wheelSpin() {
         (o += arr[a].simpleAngle), (n = arr[a].text), (r = a), (a += 1);
     } while (o < s);
     (subAngle = 360 - stopAtPrevious), console.log("winner", n);
-    const i = gsap.to(wheel, { rotation: "+=360", duration: 1.5, transformOrigin: "50% 50%", ease: Power3.easeIn, onComplete: () => l.play(), paused: !0 }),
+    const i = gsap.to(wheel, { rotation: "+=360", duration: 3.0, transformOrigin: "50% 50%", ease: Power3.easeIn, onComplete: () => l.play(), paused: !0 }),
         l = gsap.to(wheel, {
             transformOrigin: "50% 50%",
             rotation: "+=360",
             ease: "none",
-            duration: 3.0,
+            duration: 0.35,
             onComplete: () => {
                 loopIteration >= fullSpins && requestStop ? c.play() : (loopIteration++, l.play(0));
             },

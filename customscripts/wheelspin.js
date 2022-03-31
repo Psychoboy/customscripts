@@ -323,3 +323,4 @@ document.addEventListener("DOMContentLoaded", () => StartListening()),
     (Array.prototype.remove = function (e) {
         return this.some((t, n, r) => t === e && (r.splice(n, 1), !0)), this;
     });
+

@@ -204,20 +204,20 @@ function createLabel(e, t, n) {
         ul.appendChild(o);
 }
 function scrollLabels() {
-    const e = gsap.getProperty(".labels", "height");
-    e < 740 ||
-        (gsap.set(".labels", { y: 0 }),
-        (window.startScrolling = new gsap.timeline({
-            repeat: -1,
-            repeatDelay: 10,
-            repeatRefresh: !0,
-            ease: "power1.inOut",
-            onRepeat: () => {
-                0 - gsap.getProperty(".labels", "y") >= e && (gsap.set(".labels", { y: 744 }), gsap.to(".labels", { y: 0, duration: 3, ease: "power1.inOut", delay: 1 }));
-            },
-        })),
-        window.startScrolling.to(".labels", { y: "-=744", duration: 3, ease: Power3.easeIn, delay: 10 }),
-        window.startScrolling.play());
+//     const e = gsap.getProperty(".labels", "height");
+//     e < 740 ||
+//         (gsap.set(".labels", { y: 0 }),
+//         (window.startScrolling = new gsap.timeline({
+//             repeat: -1,
+//             repeatDelay: 10,
+//             repeatRefresh: !0,
+//             ease: "power1.inOut",
+//             onRepeat: () => {
+//                 0 - gsap.getProperty(".labels", "y") >= e && (gsap.set(".labels", { y: 744 }), gsap.to(".labels", { y: 0, duration: 3, ease: "power1.inOut", delay: 1 }));
+//             },
+//         })),
+//         window.startScrolling.to(".labels", { y: "-=744", duration: 3, ease: Power3.easeIn, delay: 10 }),
+//         window.startScrolling.play());
 }
 function makeTextSpanNode(e, t) {
     const n = t.createTextNode(e),
